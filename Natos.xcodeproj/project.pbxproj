@@ -11,6 +11,13 @@
 		4C100927295C071E005D4D82 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C100926295C071E005D4D82 /* ContentView.swift */; };
 		4C100929295C071F005D4D82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C100928295C071F005D4D82 /* Assets.xcassets */; };
 		4C10092C295C071F005D4D82 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C10092B295C071F005D4D82 /* Preview Assets.xcassets */; };
+		4C100936295C09C3005D4D82 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C100935295C09C3005D4D82 /* Home.swift */; };
+		4C10093A295C0A39005D4D82 /* Note.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4C100938295C0A39005D4D82 /* Note.xcdatamodeld */; };
+		4C10093C295C0A97005D4D82 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C10093B295C0A97005D4D82 /* DataController.swift */; };
+		4C10093E295C0E12005D4D82 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C10093D295C0E12005D4D82 /* CardView.swift */; };
+		4C100940295C167F005D4D82 /* AddNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C10093F295C167F005D4D82 /* AddNote.swift */; };
+		4C860EEA295C51B800D29B7D /* EditNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C860EE9295C51B800D29B7D /* EditNote.swift */; };
+		4C860EEC295C6A6B00D29B7D /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C860EEB295C6A6B00D29B7D /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,13 @@
 		4C100926295C071E005D4D82 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4C100928295C071F005D4D82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C10092B295C071F005D4D82 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4C100935295C09C3005D4D82 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		4C100939295C0A39005D4D82 /* Note.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Note.xcdatamodel; sourceTree = "<group>"; };
+		4C10093B295C0A97005D4D82 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		4C10093D295C0E12005D4D82 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		4C10093F295C167F005D4D82 /* AddNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNote.swift; sourceTree = "<group>"; };
+		4C860EE9295C51B800D29B7D /* EditNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNote.swift; sourceTree = "<group>"; };
+		4C860EEB295C6A6B00D29B7D /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +65,13 @@
 		4C100923295C071E005D4D82 /* Natos */ = {
 			isa = PBXGroup;
 			children = (
+				4C100937295C09D5005D4D82 /* Core Data */,
+				4C100934295C09B2005D4D82 /* Views */,
 				4C100924295C071E005D4D82 /* NatosApp.swift */,
 				4C100926295C071E005D4D82 /* ContentView.swift */,
 				4C100928295C071F005D4D82 /* Assets.xcassets */,
 				4C10092A295C071F005D4D82 /* Preview Content */,
+				4C860EEB295C6A6B00D29B7D /* Extension.swift */,
 			);
 			path = Natos;
 			sourceTree = "<group>";
@@ -65,6 +82,26 @@
 				4C10092B295C071F005D4D82 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4C100934295C09B2005D4D82 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4C100935295C09C3005D4D82 /* Home.swift */,
+				4C10093D295C0E12005D4D82 /* CardView.swift */,
+				4C10093F295C167F005D4D82 /* AddNote.swift */,
+				4C860EE9295C51B800D29B7D /* EditNote.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4C100937295C09D5005D4D82 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				4C100938295C0A39005D4D82 /* Note.xcdatamodeld */,
+				4C10093B295C0A97005D4D82 /* DataController.swift */,
+			);
+			path = "Core Data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +174,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C860EEC295C6A6B00D29B7D /* Extension.swift in Sources */,
+				4C100940295C167F005D4D82 /* AddNote.swift in Sources */,
+				4C10093C295C0A97005D4D82 /* DataController.swift in Sources */,
+				4C10093A295C0A39005D4D82 /* Note.xcdatamodeld in Sources */,
 				4C100927295C071E005D4D82 /* ContentView.swift in Sources */,
+				4C100936295C09C3005D4D82 /* Home.swift in Sources */,
+				4C860EEA295C51B800D29B7D /* EditNote.swift in Sources */,
+				4C10093E295C0E12005D4D82 /* CardView.swift in Sources */,
 				4C100925295C071E005D4D82 /* NatosApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +319,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,6 +349,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,6 +385,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4C100938295C0A39005D4D82 /* Note.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4C100939295C0A39005D4D82 /* Note.xcdatamodel */,
+			);
+			currentVersion = 4C100939295C0A39005D4D82 /* Note.xcdatamodel */;
+			path = Note.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4C100919295C071E005D4D82 /* Project object */;
 }
